@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hide-it
+
+server:
+  port: 9999
+
+jasypt:
+    encryption:
+        algorithm: PBEWITHHMACSHA512ANDAES_256
+        defaultSecret: deafult

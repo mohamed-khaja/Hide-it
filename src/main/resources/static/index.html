@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hide-!T</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-wrap">
+            <img src="/logo/img-removebg-preview copy.png">
+            <h2>Lock It Tight, Reveal It Right.</h2>
+
+            <div class="add">
+                <p>
+                    <b>Add more inputs</b>
+                    <button class="add-btn">&plus;</button>
+            </div>
+            <div class="radio-buttons">
+                <b>
+                    <!-- Having "name" atttribute same value make sure only one button is selected at a time -->
+                    <label>
+                        <input type="radio" name="action" value="encrypt" checked> Encrypt
+                    </label>
+                    <label>
+                        <input type="radio" name="action" value="decrypt"> Decrypt
+                    </label>
+                </b>
+            </div>
+        </div>
+
+        <!-- Initial Input Block -->
+        <div class="input-block">
+            <label>Text: </label><input type="text" placeholder="Enter the text"><br>
+            <label>Secret: </label><input type="text" placeholder="Enter Secret Key"><br>
+            <input type="text" class="result-box" readonly placeholder="Result">
+        </div>
+        <div class="submit-btn">
+            <button type="submit" class="submit">Submit</button>
+        </div>
+    </div>
+    <script src="input.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
